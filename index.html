@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Vitals</title>
+</head>
+
+<body>
+    <div>
+        <p>
+            Here when screen size is Minimum 1200px then we will get Capgemini logo.
+            <br />
+            When the screen size is Minimum 768px, then we will get swiggy-logo.
+            <br />
+            When the screen size is Minimum 480px, then we will get Vyapar-logo.
+            <br />
+            Saleken-logo will act as a fall back image.
+        </p>
+    </div>
+    <picture>
+        <source srcset="Capgemini-Logo.png" media="(min-width: 1200px)" />
+        <source srcset="swiggy-logo.png" media="(min-width: 768px)" />
+        <source srcset="Vyapar-Logo.png" media="(min-width: 480px)" />
+        <img src="Salesken-logo.png" alt="FallBack-Image" />
+    </picture>
+</body>
+
+</html>
